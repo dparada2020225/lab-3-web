@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>La Bodega | Señal desde Vega 7</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <h1>La Bodega de la Horizonte</h1>
+      <nav aria-label="breadcrumb">
+        <ol>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>La Bodega</li>
+        </ol>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <p>
+            La bodega huele a metal frío y combustible. Filas de cajas selladas
+            cubren las paredes. Tu ingeniero <strong>Kael</strong> está
+            revisando inventario cuando entras.
+          </p>
+          <p>
+            "Si vamos a bajar a ese planeta, necesitamos el equipo adecuado",
+            dice sin levantar la vista. "Pero hay un problema: el módulo de
+            descenso necesita calibración. Tomará tiempo."
+          </p>
+
+          <details>
+            <summary>🔧 Ver inventario disponible</summary>
+            <ul>
+              <li>Trajes de exploración: 3 unidades (operativas)</li>
+              <li>Escáneres biométricos: 2 unidades</li>
+              <li>Armas de pulso: 4 unidades (carga al 60%)</li>
+              <li>Kit médico de emergencia: 1 unidad</li>
+              <li>Sonda autónoma modelo A-7: 1 unidad (sin calibrar)</li>
+            </ul>
+          </details>
+
+          <section>
+            <h2>Registrar en la bitácora</h2>
+            <dialog id="bitacora-dialog">
+              <h3>Bitácora de la Comandante Lyra Solis</h3>
+              <form method="dialog">
+                <p>
+                  Fecha: <time datetime="2187-03-12">12 de marzo de 2187</time>
+                </p>
+                <p>Nota de misión:</p>
+                <p><textarea rows="4" cols="40" placeholder="Escribe tu nota aquí..."></textarea></p>
+                <p><button type="submit">Cerrar bitácora</button></p>
+              </form>
+            </dialog>
+            <p>
+              <button onclick="document.getElementById('bitacora-dialog').showModal()">
+                Abrir bitácora de misión
+              </button>
+            </p>
+          </section>
+
+          <progress value="2" max="5" title="Progreso de la misión: escena 2 de 5"></progress>
+          <p><small>Progreso de la misión: en curso</small></p>
+        </section>
+
+        <nav aria-label="Opciones">
+          <ul>
+            <li><a href="./puente.html">Ir al puente a analizar los datos</a></li>
+            <li><a href="../planeta/descenso.html">Ya tienes suficiente. Descender a Vega 7</a></li>
+          </ul>
+        </nav>
+      </article>
+    </main>
+
+    <footer>
+      <p>Elige con sabiduría. El universo no perdona los errores.</p>
+    </footer>
+  </body>
+</html>
